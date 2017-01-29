@@ -1,0 +1,34 @@
+import requests
+import pandas as pd
+import matplotlib.pyplot as plt
+import numpy as np
+
+#
+
+AllstarFull = pd.read_csv("http://raw.githubusercontent.com/chadwickbureau/baseballdatabank/master/core/AllstarFull.csv")
+Appearances = pd.read_csv("http://raw.githubusercontent.com/chadwickbureau/baseballdatabank/master/core/Appearances.csv")
+AwardsManagers = pd.read_csv("http://raw.githubusercontent.com/chadwickbureau/baseballdatabank/master/core/AwardsManagers.csv")
+AwardsPlayers = pd.read_csv("http://raw.githubusercontent.com/chadwickbureau/baseballdatabank/master/core/AwardsPlayers.csv")
+AwardsShareManagers = pd.read_csv("http://raw.githubusercontent.com/chadwickbureau/baseballdatabank/master/core/AwardsShareManagers.csv")
+AwardsSharePlayers = pd.read_csv("http://raw.githubusercontent.com/chadwickbureau/baseballdatabank/master/core/AwardsSharePlayers.csv")
+Batting = pd.read_csv("http://raw.githubusercontent.com/chadwickbureau/baseballdatabank/master/core/Batting.csv")
+BattingPost = pd.read_csv("http://raw.githubusercontent.com/chadwickbureau/baseballdatabank/master/core/BattingPost.csv")
+CollegePlaying = pd.read_csv("http://raw.githubusercontent.com/chadwickbureau/baseballdatabank/master/core/CollegePlaying.csv")
+Fielding = pd.read_csv("http://raw.githubusercontent.com/chadwickbureau/baseballdatabank/master/core/Fielding.csv")
+FieldingOF = pd.read_csv("http://raw.githubusercontent.com/chadwickbureau/baseballdatabank/master/core/FieldingOF.csv")
+FieldingOFsplit = pd.read_csv("http://raw.githubusercontent.com/chadwickbureau/baseballdatabank/master/core/FieldingOFsplit.csv")
+FieldingPost = pd.read_csv("http://raw.githubusercontent.com/chadwickbureau/baseballdatabank/master/core/FieldingPost.csv")
+HallOfFame = pd.read_csv("http://raw.githubusercontent.com/chadwickbureau/baseballdatabank/master/core/HallOfFame.csv")
+HomeGames = pd.read_csv("http://raw.githubusercontent.com/chadwickbureau/baseballdatabank/master/core/HomeGames.csv")
+Managers = pd.read_csv("http://raw.githubusercontent.com/chadwickbureau/baseballdatabank/master/core/Managers.csv")
+ManagersHalf = pd.read_csv("http://raw.githubusercontent.com/chadwickbureau/baseballdatabank/master/core/ManagersHalf.csv")
+Master = pd.read_csv("http://raw.githubusercontent.com/chadwickbureau/baseballdatabank/master/core/Master.csv")
+Parks = pd.read_csv("http://raw.githubusercontent.com/chadwickbureau/baseballdatabank/master/core/Parks.csv")
+Pitching = pd.read_csv("http://raw.githubusercontent.com/chadwickbureau/baseballdatabank/master/core/Pitching.csv")
+PitchingPost = pd.read_csv("http://raw.githubusercontent.com/chadwickbureau/baseballdatabank/master/core/PitchingPost.csv")
+Salaries = pd.read_csv("http://raw.githubusercontent.com/chadwickbureau/baseballdatabank/master/core/Salaries.csv")
+Schools = pd.read_csv("http://raw.githubusercontent.com/chadwickbureau/baseballdatabank/master/core/Schools.csv")
+SeriesPost = pd.read_csv("http://raw.githubusercontent.com/chadwickbureau/baseballdatabank/master/core/SeriesPost.csv")
+Teams = pd.read_csv("http://raw.githubusercontent.com/chadwickbureau/baseballdatabank/master/core/Teams.csv")
+TeamsFranchises = pd.read_csv("http://raw.githubusercontent.com/chadwickbureau/baseballdatabank/master/core/TeamsFranchises.csv")
+TeamsHalf = pd.read_csv("http://raw.githubusercontent.com/chadwickbureau/baseballdatabank/master/core/TeamsHalf.csv")

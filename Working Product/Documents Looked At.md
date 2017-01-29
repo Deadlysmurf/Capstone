@@ -5,7 +5,7 @@ http://www.fangraphs.com/library/getting-started/
 
 http://pandas.pydata.org/pandas-docs/stable/groupby.html
 
-
+http://seanlahman.com/files/database/readme2014.txts
 
 
 Unlikely to be useful:
