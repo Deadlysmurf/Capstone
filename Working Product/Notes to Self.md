@@ -3,6 +3,7 @@
 
 - Play with Feather?
 
+- This is more related to work, but it may be worth using some of the structure from here: https://drivendata.github.io/cookiecutter-data-science/
 
 #Questions for self: 
 - How do I want to deal with the positions - do I want to look at the position that the person played, the position that they played the most, the number of postions that they played that season or all of the above? 
