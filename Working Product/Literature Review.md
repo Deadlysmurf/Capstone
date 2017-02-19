@@ -19,11 +19,37 @@ After exploring the data, regression analysis will be conducted, both using time
 
 <Write summary of the related papers that you reviewed here. Write the summary in your own words—don’t use the technical jargon from the paper that you don’t understand. Keep this section short—a short paragraph or few sentences about each paper you reviewed should be sufficient.>
 
- - I'm going to need to review some literature or something.  I can see how this is going to be the most time consuming part of this analysis.
+### Literature about Sabermetrics
 
-https://www.stat.berkeley.edu/~brill/Papers/EDASage.pdf
+ -  Adler, Joseph. Baseball Hacks. O'Reilly Media, 2006. Print.
+  - This book is meant to be a self-directed program for learning more about baseball, Perl, MySQL, and R.  It provides lots of exercises about how to analyze baseball data. It's not very useful for this project, as the project goes beyond the exercises in the book, but it's a excellent introduction guide.  
 
-http://projecteuclid.org/download/pdf_1/euclid.aoms/1177704711
+
+### Literature about Python
+Prior to this project, I have never worked in Python.  I'm excited for the opportunity to add another language to my education, especially as it gets more popular in the data science community.
+
+- McKinney, Wes. Python for Data Analysis. 1st ed. O'Reilly Media, 2012. Print.
+  - McKinney is the primary author of Pandas for python and a globally recognized expert in python.  This older publication is in python 2.7, while I am working in python 3, so it has been more valuable for concepts than an actual coding resource.
+
+
+- Learn R, Python & Data Science Online. Computer software. Datacamp. Datacamp.com. Web.
+  - Datacamp is a great online based learning software that combines videos and interactive lessons to teach python, R and data analysis. Just learning python, it has proved a fairly invaluable resource.
+
+
+### Literature about Exploratory Data Analysis
+
+- Brillinger, David R. "Data Analysis, Exploratory." International Encyclopedia of Political Science. Web. <www.stat.berkeley.edu/~brill/Papers/EDASage.pdf>
+  - This article summaries a variety of Exploratory Data Analysis techniques, mostly inspired by the work of Tukey, whose's textbook in 1977 popularized the phrase 'Exploratory Data Analysis'.  This article focuses on the importance of looking for structure and patterns in the data before hypothesis testing the data.  
+
+
+- Tukey, John W. The Future of Data Analysis. Ann. Math. Statist. 33 (1962), no. 1, 1--67. doi:10.1214/aoms/1177704711. http://projecteuclid.org/euclid.aoms/1177704711.
+  - This publication is old (written before the common use of computers for data analysis), but most of publication remains valid and important today. Tukey, who would go on to create the box plot in his 1977 book on data analysis, spends most of the article discussing what he sees as the future of data analysis as we move into the computer age. He talks about the importance of keeping an eye to the art, as well as the science of data analysis, that automation should be encouraged because it allows the sophisticated data analyst to spend more time with new areas of exploration, and the importance of flexibility in approaches to data analysis.  
+
+
+
+### Literature about Regression
+
+
 
 ## Dataset
 
@@ -41,6 +67,7 @@ The Master and TeamsFranchises tables are both reference tables, that provide fu
 
 
 ## Approach
+
 
 *BLOCK DIAGRAM IS ON THE NEXT PAGE*
 
