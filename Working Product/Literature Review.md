@@ -24,6 +24,9 @@ After exploring the data, regression analysis will be conducted, both using time
  -  Adler, Joseph. Baseball Hacks. O'Reilly Media, 2006. Print.
   - This book is meant to be a self-directed program for learning more about baseball, Perl, MySQL, and R.  It provides lots of exercises about how to analyze baseball data. It's not very useful for this project, as the project goes beyond the exercises in the book, but it's a excellent introduction guide.  
 
+- Chang, Jason, and Joshua Zenilman. "A Study of Sabermetrics in Major League Baseball: The Impact of Moneyball on Free Agent Salaries." Honors in Management (2013). Washington University in St. Louis, 13 Apr. 2013. Web. <http://olinblog.wustl.edu/wp-content/uploads/AStudyofSabermetricsinMajorLeagueBaseball.pdf>.
+  - An undergraduate managment thesis about free agent salaries since the early 2000s, with a focus on economic theory. Interesting to see their approach, although there are some flaws in their methodology. (The salary data they are using appears to be incomplete, they sampled three years of data only, and they only took into account the previous year's performance of a player) 
+
 
 ### Literature about Python
 Prior to this project, I have never worked in Python.  I'm excited for the opportunity to add another language to my education, especially as it gets more popular in the data science community.
@@ -49,7 +52,18 @@ Prior to this project, I have never worked in Python.  I'm excited for the oppor
 
 ### Literature about Regression
 
+- "An Introduction to Machine Learning with Scikit-learn¶." Scikit-learn 0.18.1 Documentation. Scikit-learn 0.18.1. Web. <http://scikit-learn.org/stable/tutorial/basic/tutorial.html>.
+  - Documentation and guides on one of the primary machine learning packages for python. Includes the primer on the code for the package, as well as concrete examples of the package being used on the iris and digits data sets.
 
+
+## Literature about Social Sequence Analysis
+
+
+- Abbott, Andrew. 1995. “Sequence Analysis: New Methods for Old Ideas.” Annual Review of Sociology 21:93-113. Web.
+  - An early paper about the application of sequence analysis, traditionally a methodology used only in the hard sciences, in the social sciences (examples: sociology and economics). There is some light discussion of techniques towards the end of the paper, although a lot of the methodology is outdated as computers have become more powerful.  
+
+- McVicar, D. and M. Anyadike-Danes ( 2002). "Predicting Successful and Unsuccessful Transitions from School to Work by Using Sequence Methods." Journal of the Royal Statistical Society 165:317-34. Web.
+  - This review of predicting the success of transition from school to work in Northern Ireland has a strong methodology secion that discusses the merits of clustering analysis, social sequence analysis, using the output from a cluster analysis in a regression analysis, and the importance of data prep for the applicable methods.
 
 ## Dataset
 
