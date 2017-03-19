@@ -5,3 +5,4 @@ graph TD;
     3-->2
     3-->4(Correlation Analysis)
     4-->5(Regression Analysis);
+    5-->6(Social Sequence Analysis)

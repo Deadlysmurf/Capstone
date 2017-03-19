@@ -7,17 +7,21 @@
 
 <First, provide the context of the problem and then state the problem (your main research question). Second, write briefly that what are you proposing to solve this problem (don’t write details of the solution here). (You can use part of your abstract here)>
 
-Most sabermetric analysis has been focused on predicting player performance and the performance record of any given team.  As there is more focus on increasing the competitive balance in major league sports through salary caps and luxury taxes, teams need to spend more time analyzing their payrolls. This includes looking at the monetary value that a player contributes to a team objectively through analytics, rather than relying on perceived values.
+Most sabermetric analysis has been focused on predicting expected player performance and the expected performance record of teams.  As there is more focus on increasing the competitive balance in major league sports through salary caps and luxury taxes, teams need to spend more time analyzing their payrolls. This includes looking at the monetary value that a player contributes to a team objectively through analytics, rather than relying on perceived values.
 
-My key research question is to define what factors are the most relevant in predicting player salaries.
+My key research question is to define what factors are the most relevant in predicting current player salaries.
 
 I plan on exploring the relationships in the data using exploratory data analysis techniques, to explore the data, refine the data set, and to establish further hypothesis for testing.  
 
-After exploring the data, regression analysis will be conducted, both using time series where the most recent year is used to test the fit of the model, and standard 10-fold analysis.
+After exploring the data, regression analysis will be conducted, both using time series where the most recent year is used to test the fit of the model, and standard 10-fold analysis. Some factors will also be analyzed using social sequence analysis, to look at the causal time-linear relationships between player statistics and salary bumps.
 
 ## Literature Review
 
 <Write summary of the related papers that you reviewed here. Write the summary in your own words—don’t use the technical jargon from the paper that you don’t understand. Keep this section short—a short paragraph or few sentences about each paper you reviewed should be sufficient.>
+
+In the past four months, I've been heavily reading literature and watching webinars posted on Data Science Central, which has been mainly focused on work place applications, although a great deal of the regression literature will carry over into this project.
+
+I've also been watching other webinars, such as the BrightTalk Data Science summit series as part of workplace enrichment, which cover a wide range of pratical applications of data science techniques.
 
 ### Literature about Sabermetrics
 
@@ -25,7 +29,7 @@ After exploring the data, regression analysis will be conducted, both using time
   - This book is meant to be a self-directed program for learning more about baseball, Perl, MySQL, and R.  It provides lots of exercises about how to analyze baseball data. It's not very useful for this project, as the project goes beyond the exercises in the book, but it's a excellent introduction guide.  
 
 - Chang, Jason, and Joshua Zenilman. "A Study of Sabermetrics in Major League Baseball: The Impact of Moneyball on Free Agent Salaries." Honors in Management (2013). Washington University in St. Louis, 13 Apr. 2013. Web. <http://olinblog.wustl.edu/wp-content/uploads/AStudyofSabermetricsinMajorLeagueBaseball.pdf>.
-  - An undergraduate managment thesis about free agent salaries since the early 2000s, with a focus on economic theory. Interesting to see their approach, although there are some flaws in their methodology. (The salary data they are using appears to be incomplete, they sampled three years of data only, and they only took into account the previous year's performance of a player) 
+  - An undergraduate management thesis about free agent salaries since the early 2000s, with a focus on economic theory. Interesting to see their approach, although there are some flaws in their methodology. (The salary data they are using appears to be incomplete, they sampled three years of data only, and they only took into account the previous year's performance of a player)
 
 
 ### Literature about Python
@@ -75,6 +79,8 @@ The .csv files in at the above github link that I'm planning on using for this a
 
 The AllStarFull, Appearances, Awards, Batting, Fielding, FieldingOF, Pitching tables provide attributes about the players.
 
+I will be using games played in the post-season, games played though the regular season, positions played, batting average and fielding averages for my analysis.  I will also be using attributes from these tables to calculate other sabermetric values such as WAR (Wins Above Replacement) ratings.
+
 The Salaries table will provide the dependent variable (salary) for analysis. It provides salaries by player, team and year.
 
 The Master and TeamsFranchises tables are both reference tables, that provide full text names for the player and team keys, as well as additional player information such as date of birth.  
@@ -82,8 +88,7 @@ The Master and TeamsFranchises tables are both reference tables, that provide fu
 
 ## Approach
 
-
-*BLOCK DIAGRAM IS ON THE NEXT PAGE*
+![Block Chart](Block Chart for Literature Review.png)
 
 <Create a block diagram for the steps of your approach to clearly provide an overview. For example, if you first scrapped twitter, second applied NLP techniques to extract keywords, third labelled the tweets as positive and negative using a set of keywords, and fourth build a classifier, then you should create a box for each of the steps with arrows connecting one step to the next one. A sample block diagram is shown below.
 
@@ -97,7 +102,7 @@ Details:
  - Download the Chadwick Bureau database so that a static copy of the data is maintained
  - Import the data into python, specifically into Pandas dataframes
 
-Github Link:
+<Github Link:>
 
 ### Step 2: Data Cleaning/Structuring
 
@@ -109,7 +114,7 @@ Details:
  - Add player pre-calculated statistics such as batting average to the master analysis table
  - Calculate additional statistics such as WAR ratings and slugging ratings
 
-Github Link:
+<Github Link:>
 
 ### Step 3: Exploratory Data Analysis
 
@@ -122,7 +127,7 @@ Details:
    - How does player nationality affect salaries?
    - How does the number of positions a player plays affect salary?
 
-Githib Link:
+<Githib Link:>
 
 ### Step 4: Correlation Analysis
 
@@ -130,7 +135,7 @@ Details:
 
  - Using pre-determined factors, such as batting average, and any factors that prove relevant during the exploratory data analysis, check the correlation between the variables to establish that all the factors are independent before proceeding with regression analysis.
 
-Githib Link:
+<Githib Link:>
 
 ### Step 5: Regression Analysis
 
@@ -140,8 +145,9 @@ Details:
  - Hold the most recent year out of the regression to test the fit of the model
  - Test the fit of the model using 10-fold analysis.
 
-Githib Link:
+<Githib Link:>
 
-<Step N: Title
+### Step 6: Social Sequence Analysis
 
-Write details of the step N. If there is any source code that you’d like to share then provide the link of the Github.>
+Details:
+ - Examine the time ordered relationships between things like major league debut, post-season appearances, and increases in salary.  
