@@ -95,7 +95,6 @@ The Master and TeamsFranchises tables are both reference tables, that provide fu
 Once this is done, explain each of the steps in detail. What are you planning to do in each step or have already done. For example, in the above case you would create subheadings for each of the steps.>
 
 
-
 ### Step 1: Data Collection
 Details:
 
