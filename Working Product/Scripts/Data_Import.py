@@ -1,5 +1,5 @@
 #AllstarFull = pd.read_csv("../Data/AllstarFull.csv")
-#Appearances = pd.read_csv("../Data/Appearances.csv")
+Appearances = pd.read_csv("../Data/Appearances.csv")
 #AwardsManagers = pd.read_csv("../Data/AwardsManagers.csv")
 #AwardsPlayers = pd.read_csv("../Data/AwardsPlayers.csv")
 #AwardsShareManagers = pd.read_csv("../Data/AwardsShareManagers.csv")

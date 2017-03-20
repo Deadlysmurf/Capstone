@@ -8,3 +8,6 @@ Salary_Analysis['debut'] = pd.to_datetime(Salary_Analysis['debut'])
 Salary_Analysis['debutYear'] = pd.DatetimeIndex(Salary_Analysis['debut']).year
 Salary_Analysis['yearsPlayed'] = Salary_Analysis['yearID'] - Salary_Analysis['debutYear']
 Salary_Analysis = Salary_Analysis.drop(['birthYear', 'debut', 'debutYear'], axis=1)
+
+#Adding in the appearance chart
+Salary_Analysis = pd.merge(Salary_Analysis, Appearances,  how='left', left_on=['yearID','teamID', 'playerID', 'lgID'], right_on = ['yearID','teamID','playerID','lgID'])
