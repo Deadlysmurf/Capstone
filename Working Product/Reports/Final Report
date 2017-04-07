@@ -1,0 +1,39 @@
+# Interim Report for Capstone Project for Ryerson CKME136
+#### Margaret Anderson Kilfoil
+#### https://github.com/Deadlysmurf/Capstone
+
+# Introduction
+First, provide the context of the problem and then state the problem (your main research question). Second, write briefly that what are you proposing to solve this problem (don’t write details of the solution here).
+The research problem and question should be clearly specified here
+Introduction
+Provide the context of the problem and then state the problem (your main research question). Second, write briefly that what are you proposing to solve this problem (don’t write details of the solution here). (You can use part of your abstract here)
+Literature Review
+Write summary of the related papers that you reviewed here.  Write the summary in your own words—don’t use the technical jargon from the paper that you don’t understand. Keep this section short—a short paragraph or few sentences about each paper you reviewed should be sufficient.
+Dataset
+Give the description of the dataset that you are using along with the individual attributes you will or will not use in your analysis. Also mention the source of the dataset (where did you get it from). In case the data is curated and created by you please explain the details. Descriptive statistics of the attributes and datasets can also be provided here.
+
+# Approach
+Create a block diagram for the steps of your approach to clearly provide an overview. For example, if you first scrapped twitter, second applied NLP techniques to extract keywords, third labelled the tweets as positive and negative using a set of keywords, and fourth build a classifier, then you should create a box for each of the steps with arrows connecting one step to the next one. A sample block diagram is shown below.
+
+Once this is done, explain each of the steps in detail. What are you planning to do in each step or have already done. For example, in the above case you would create subheadings for each of the steps.
+Step 1: <Name of the step>
+Write details of the step 1. If there is any source code that you’d like to share then provide the link of the Github.
+Step 2: <Name of the step>
+Write details of the step 2. If there is any source code that you’d like to share then provide the link of the Github.
+………………………………………………………………………………………………………………………..
+………………………………………………………………………………………………………………………..
+Step N: <Name of the step>
+Write details of the step N. If there is any source code that you’d like to share then provide the link of the Github.
+
+
+
+Results
+
+Explain your results here. Consider that you need to communicate your results to executives in an organization. For example:
+Insert tables and/or charts showing the results
+Write description of the tables and charts, such that they show the usefulness for an organization
+Identify the evaluation measures, such as accuracy, precision, recall, etc.
+
+Conclusions
+
+Give a short summary (one to two paragraphs) of your analysis and conclude the discussion by defining the usefulness of your analysis.
