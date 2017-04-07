@@ -114,7 +114,7 @@ Details:
    - How does player nationality affect salaries?
    - How does the number of positions a player plays affect salary?
 
-<Githib Link:>
+Githib Link: https://github.com/Deadlysmurf/Capstone/tree/master/Juypter%20Notebooks/Exploratory%20Data%20Analysis
 
 ### Step 4: Correlation Analysis
 
@@ -122,7 +122,7 @@ Details:
 
  - Using pre-determined factors, such as batting average, and any factors that prove relevant during the exploratory data analysis, check the correlation between the variables to establish that all the factors are independent before proceeding with regression analysis.
 
-<Githib Link:>
+Githib Link: https://github.com/Deadlysmurf/Capstone/tree/master/Juypter%20Notebooks/Correlation
 
 ### Step 5: Regression Analysis
 
@@ -132,7 +132,7 @@ Details:
  - Hold the most recent year out of the regression to test the fit of the model
  - Test the fit of the model using 10-fold analysis.
 
-<Githib Link:>
+Githib Link: 
 
 ### Step 6: Social Sequence Analysis
 
