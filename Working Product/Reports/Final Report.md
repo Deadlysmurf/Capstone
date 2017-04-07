@@ -89,7 +89,7 @@ Details:
  - Download the Chadwick Bureau database so that a static copy of the data is maintained
  - Import the data into python, specifically into Pandas dataframes
 
-<Github Link:>
+Github Link: https://github.com/Deadlysmurf/Capstone/blob/master/Scripts/Data_Import.py
 
 ### Step 2: Data Cleaning/Structuring
 
@@ -101,7 +101,7 @@ Details:
  - Add player pre-calculated statistics such as batting average to the master analysis table
  - Calculate additional statistics such as WAR ratings and slugging ratings
 
-<Github Link:>
+Github Link: https://github.com/Deadlysmurf/Capstone/blob/master/Scripts/Data_Cleaning.py
 
 ### Step 3: Exploratory Data Analysis
 

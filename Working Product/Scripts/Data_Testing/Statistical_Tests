@@ -1,4 +1,0 @@
-
-If 
-exec(open("../Scripts/Data_Testing/One_Way_Anova.py").read())
-exec(open("../Scripts/Data_Testing/kruskalwallis.py").read())
