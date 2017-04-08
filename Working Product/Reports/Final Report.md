@@ -132,7 +132,7 @@ Details:
  - Hold the most recent year out of the regression to test the fit of the model
  - Test the fit of the model using 10-fold analysis.
 
-Githib Link: 
+Githib Link:
 
 ### Step 6: Social Sequence Analysis
 
@@ -145,6 +145,10 @@ Details:
 Insert tables and/or charts showing the results
 Write description of the tables and charts, such that they show the usefulness for an organization
 Identify the evaluation measures, such as accuracy, precision, recall, etc.>
+
+It's worth noteing that before including any preformace statistics into the model, the model was not preforming at all. (Explained Variance: -0.05
+r^2: -0.05
+Mean squared error: 2131653135571.50).  Clearly the actual preformence of the players matters more than any of the other charateristics of the players. 
 
 ## Conclusions
 

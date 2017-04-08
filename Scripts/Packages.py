@@ -16,3 +16,4 @@ from sklearn.linear_model import SGDClassifier
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.preprocessing import Imputer
 from sklearn.metrics import explained_variance_score, r2_score
+from sklearn import decomposition
