@@ -15,9 +15,9 @@ Data = Data.drop(['G_batting', 'G_defense'], axis=1)
 
 
 #Remove the pitchers and catchers
-Data = Data[Data["G_p"] == 0]
-Data = Data[Data["G_c"] == 0]
-Data = Data.drop(["G_p", "G_c"], axis=1)
+#Data = Data[Data["G_p"] == 0]
+#Data = Data[Data["G_c"] == 0]
+#Data = Data.drop(["G_p", "G_c"], axis=1)
 
 #Add fielding stats
 Data = pd.merge(Data, Fielding,  how='left', left_on=['yearID','teamID', 'playerID', 'lgID'], right_on = ['yearID','teamID','playerID','lgID'])

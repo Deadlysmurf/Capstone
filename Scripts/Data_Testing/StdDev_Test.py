@@ -2,7 +2,7 @@
 
 #null hypothesis that all input samples are from populations with equal variances
 
-T, pval = stats.bartlett(*[Pivot[col] for col in Pivot.columns])
+T, pval = stats.bartlett(*[Test[col] for col in Test.columns])
 
 print("T-statistic:", T)
 print("P-Value:", pval)

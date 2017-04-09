@@ -7,7 +7,7 @@
 
 
 
-H, pval = mstats.kruskalwallis([Pivot[col] for col in Pivot.columns])
+H, pval = mstats.kruskalwallis([Test[col] for col in Test.columns])
 
 print("H-statistic:", H)
 print("P-Value:", pval)

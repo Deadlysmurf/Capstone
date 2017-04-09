@@ -1,7 +1,7 @@
 #The null hypothesis is that all the values were sampled from a Gaussian distribution
 
 
-k, norm = mstats.normaltest([Pivot[col] for col in Pivot.columns], 1)
+k, norm = mstats.normaltest([Test[col] for col in Test.columns], 1)
 print("P-value:", norm[1])
 print("  ")
 

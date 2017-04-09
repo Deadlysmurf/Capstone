@@ -18,7 +18,7 @@ if independent != True or normal != True or StdDevEq != True:
     ANOVA=False
 
 else:
-    F, pval = mstats.f_oneway([Pivot[col] for col in Pivot.columns])
+    F, pval = mstats.f_oneway([Test[col] for col in Test.columns])
     print("F-statistic:", F)
     print("P-Value:", pval)
     print("  ")
