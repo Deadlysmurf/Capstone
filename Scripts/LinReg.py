@@ -14,3 +14,9 @@ print("r^2: %.2f"
 
 print("Mean squared error: %.2f"
       % np.mean((linreg.predict(X_test) - Y_test) ** 2))
+
+Coeff = pd.DataFrame(linreg.coef_).set_index(X_train.columns)
+Coeff.columns = ['Coefficient']
+Coeff['Abs'] = Coeff['Coefficient'].abs()
+Coeff = Coeff.sort_values(by='Abs', ascending=0).round(1)
+print(Coeff)
