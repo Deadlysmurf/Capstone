@@ -1,7 +1,7 @@
 
 #Added, Age, Years Played, Country of Birth, First and Last Names, Weight, Height, Bat Hand, Throwing Hand
 
-Trim_Master = Master[['playerID','birthYear', 'birthCountry', 'nameFirst','nameLast', 'weight','height','bats','throws','debut']]
+Trim_Master = Master[['playerID','birthYear', 'birthCountry', 'weight','height','bats','throws','debut']]
 Data = Salaries.merge(Trim_Master,how='left', left_on='playerID', right_on='playerID')
 Data['age'] = Data['yearID'] - Data['birthYear']
 Data['debut'] = pd.to_datetime(Data['debut'])
@@ -9,15 +9,32 @@ Data['debutYear'] = pd.DatetimeIndex(Data['debut']).year
 Data['yearsPlayed'] = Data['yearID'] - Data['debutYear']
 Data = Data.drop(['birthYear', 'debut', 'debutYear'], axis=1)
 
+
 #Adding in the appearance chart
 Data = pd.merge(Data, Appearances,  how='left', left_on=['yearID','teamID', 'playerID', 'lgID'], right_on = ['yearID','teamID','playerID','lgID'])
 Data = Data.drop(['G_batting', 'G_defense'], axis=1)
 
 
 #Remove the pitchers and catchers
-#Data = Data[Data["G_p"] == 0]
-#Data = Data[Data["G_c"] == 0]
-#Data = Data.drop(["G_p", "G_c"], axis=1)
+Data = Data[Data["G_p"] == 0]
+Data = Data[Data["G_c"] == 0]
+Data = Data.drop(["G_p", "G_c"], axis=1)
+
+
+#Combining postions to groups
+Data['Outfield'] = Data['G_lf'] + Data['G_cf'] + Data['G_rf']
+Data['Infield'] = Data['G_1b'] + Data['G_2b'] + Data['G_ss'] + Data['G_3b']
+Data['Pinch'] = Data['G_ph'] + Data['G_pr']
+Data['DH'] = Data['G_dh']
+
+Data = Data.drop(['G_lf', 'G_cf', 'G_rf', 'G_1b', 'G_2b', 'G_ss', 'G_3b', 'G_ph', 'G_pr', 'G_dh', 'G_of' ], axis=1)
+
+
+#Baseline to games
+Data['Outfield'] = Data['Outfield']/Data['G_all']
+Data['Infield'] = Data['Infield']/Data['G_all']
+Data['Pinch'] = Data['Pinch']/Data['G_all']
+Data['DH'] = Data['DH']/Data['G_all']
 
 #Add fielding stats
 Data = pd.merge(Data, Fielding,  how='left', left_on=['yearID','teamID', 'playerID', 'lgID'], right_on = ['yearID','teamID','playerID','lgID'])
@@ -40,8 +57,15 @@ Data['OBP'] = (Data['H']+Data['BB']+Data['HBP'])/(Data['AB']+Data['BB']+Data['HB
 Data['OPS'] = Data['SLG'] + Data['OBP']
 
 
-#Converting to the stats per at Bat
-Data[['R', 'H', '2B', '3B', 'HR', 'RBI', 'SB','CS', 'BB', 'SO', 'IBB', 'HBP', 'SH', 'SF', 'GIDP']] = Data[['R', 'H', '2B', '3B', 'HR', 'RBI', 'SB','CS', 'BB', 'SO', 'IBB', 'HBP', 'SH', 'SF', 'GIDP']].divide(Data.AB, axis=0).fillna(0)
+#Dropping stats used in SLG, OBP, and OPS
+Data = Data.drop(['R', 'H', '2B', '3B', 'HR', 'RBI', 'SB','CS', 'BB', 'SO', 'IBB', 'HBP', 'SH', 'SF', 'GIDP'], axis=1)
+Data = Data.drop(['AB', '1B'], axis=1)
+
+#SLG and OBP are highly corrolated to OPS.
+Data = Data.drop(['SLG', 'OBP'], axis=1)
+
+#Too Many Games
+Data = Data.drop(['GS_x', 'G_all', 'G_x'], axis=1)
 
 
 #Remove infs and Nans

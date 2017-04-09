@@ -18,3 +18,9 @@ X_train = Xvar.loc[train_sample]
 Y_train = Yvar.loc[train_sample]
 X_test = Xvar.loc[test_sample]
 Y_test = Yvar.loc[test_sample]
+
+#In case there are issues
+#X_train.head(10)
+#Y_train.head(10)
+#X_test.head(10)
+#Y_test.head(10)

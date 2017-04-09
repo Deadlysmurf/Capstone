@@ -6,14 +6,8 @@ from scipy import stats
 from scipy.stats import mstats
 import seaborn as sns
 
-from sklearn.linear_model import LogisticRegression, LinearRegression
-from sklearn.svm import SVC, LinearSVC
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.naive_bayes import GaussianNB
-from sklearn.linear_model import Perceptron
-from sklearn.linear_model import SGDClassifier
-from sklearn.tree import DecisionTreeClassifier
+from sklearn.linear_model import LinearRegression
 from sklearn.preprocessing import Imputer
 from sklearn.metrics import explained_variance_score, r2_score
 from sklearn import decomposition
+from sklearn.cluster import KMeans
